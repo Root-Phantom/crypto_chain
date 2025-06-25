@@ -21,7 +21,7 @@ describe('Blockchain', () => {
         describe('When the chain doesn\'t start with genesis block', () => {
             it('Returns false', () => {
                 blockchain.chain[0] = {data: 'fake-genesis'}
-                expect(Blockchain.isValidChain(blockchain)).toBe(false);
+                expect(Blockchain.isValidChain(blockchain.chain)).toBe(false);
             })
         })
         describe('When the chain start with genesis block and has multiple blocks', () => {
@@ -47,7 +47,6 @@ describe('Blockchain', () => {
                     expect(Blockchain.isValidChain(blockchain.chain)).toBe(true);
                 })
             })
-
         })
     })
 })
