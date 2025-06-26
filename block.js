@@ -19,8 +19,7 @@ class Block {
         return new this({
             timestamp, lastHash, data: data, hash: cryptoHash(timestamp, lastHash, data),
 
-        })
-        
+        });
     }
 }
 
