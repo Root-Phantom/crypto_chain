@@ -20,6 +20,7 @@ class Block {
             timestamp, lastHash, data: data, hash: cryptoHash(timestamp, lastHash, data),
 
         })
+        
     }
 }
 
